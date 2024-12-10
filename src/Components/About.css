@@ -1,0 +1,81 @@
+/* General styles */
+.about-section {
+    padding: 50px 0;
+    background-color: #000000;
+    color: aliceblue;
+  /* Added margin to create space between About and Skills section */
+}
+  
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+/* About Image styles */
+.about-img {
+    flex: 1;
+    margin-right: 30px;
+    text-align: center;
+}
+  
+.profile-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid yellow;
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+/* About Text styles */
+.about-text {
+    flex: 2;
+}
+  
+.about-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+  
+.about-text p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+  
+.about-text a {
+    color: #d3db34;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.about-text a:hover {
+    text-decoration: underline;
+}
+  
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+}
